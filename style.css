@@ -1,420 +1,487 @@
 /* Basic Styling */
 body {
-    font-family: 'Poppins', sans-serif; /* Use 'Poppins' font */
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    align-items: center;
-    background: linear-gradient(to right, rgba(8, 1, 37), grey);
-    padding: 1rem 0;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-  }
+  font-family: 'Poppins', sans-serif; /* Use 'Poppins' font */
+  margin: 0;
+  padding: 0;
+}
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem; /* Add padding to nav */
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  nav img{
-    height: 30%;
-    width: 30%;
-  }
-  
-  .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #007bff; /* Blue color for logo */
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding-right: 40px;
-    display: flex;
-  }
-  
-  nav li {
-    align-items: center;
-    margin-left: 2rem;
-  }
-  
-  nav a {
-    align-items: center;
-    text-decoration: none;
-    color: #ffffff; /* Dark gray text color */
-    font-weight: 500; /* Slightly bolder text */
-    transition: color 0.3s ease; /* Add transition effect */
-  }
-  
-  nav a:hover {
-    color: rgb(71, 40, 12); /* Blue color on hover */
-  }
-  
-  section {
-    padding: 4rem 0;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  h1, h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-weight: 600; /* Bold headings */
-    color: #333;
-  }
-  
-  p {
-    text-align: center;
-    color: #666; /* Darker gray for body text */
-    line-height: 1.6; /* Increase line height for better readability */
-  }
-  
-  button {
-    background: linear-gradient(to right, rgb(158, 102, 158), rgb(159, 131, 80));
-    text-decoration: none;
-    color: white;
-    padding: 1rem 2rem;
-    border: #333;
-    border-radius: 150px;
-    cursor: pointer;
-    font-weight: 500; /* Slightly bolder text */
-    transition: background-color 0.3s ease; /* Add transition effect */
-  }
-  
-  button:hover {
-    color: black;
-    background: linear-gradient(to left, rgb(158, 102, 158), rgb(159, 131, 80));
-  }
-  
-  #hero {
-    border-radius: 0px 0px 150px 50px;
-    background: linear-gradient(to right, rgba(8, 1, 37), grey); 
-    background-size: auto;
-    background-repeat: no-repeat;
-    color: rgb(3, 2, 28);
-    text-align: center;
-    padding: 10rem 0;
-  }
-  
-  .image{
-    float: right; /* Float the image to the left */
-    margin: 0 100px 100px 0; /* Add some margin around the image */
-    height: 100%;
-    width: 40%; /* Set the image width */
-  }
+header {
+  align-items: center;
+  background: linear-gradient(to right, rgba(8, 1, 37), grey);
+  padding: 1rem 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
 
-  .hero-content {
-    max-width: 600px;
-  }
-  
-  .hero-content h1 {
-    color: white;
-    padding-left: 10%;
-    font-size: 3rem; /* Larger heading size */
-    margin-bottom: 2rem;
-  }
-  
-  .hero-content p {
-    padding-left: 10%;
-    font-size: 1.2rem; /* Slightly larger body text */
-    margin-bottom: 3rem;
-  }
-  
-  /* Features Section */
-  .feature-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .feature {
-    width: 300px;
-    margin: 1rem;
-    text-align: center;
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
-  }
-  
-  .feature img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 1rem;
-  }
-  
-  .feature h3 {
-    font-size: 1.5rem; /* Larger heading size */
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Testimonials Section */
-  .testimonial-slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-  }
-  
-  .testimonial {
-    width: 300px;
-    margin: 1rem;
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
-  }
-  
-  .author {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-  }
-  
-  .author img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 1rem;
-  }
-  
-  .author h4 {
-    margin-bottom: 0;
-  }
-  
-  .author p {
-    font-size: 0.9rem; /* Smaller font size for author details */
-    color: #666; /* Darker gray color */
-  }
-  
-  /* Pricing Section */
-  .pricing-plans {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .plan {
-    width: 300px;
-    margin: 1rem;
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
-  }
-  
-  .plan h3 {
-    font-weight: 600; /* Bold heading */
-    margin-bottom: 1rem;
-  }
-  
-  .plan p {
-    font-size: 1.2rem; /* Larger font size for price */
-    margin-bottom: 1rem;
-  }
-  
-  .plan ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 2rem;
-  }
-  
-  /* Blog Section */
-  .blog-posts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .blog-post {
-    width: 300px;
-    margin: 1rem;
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
-  }
-  
-  .blog-post img {
-    width: 10%;
-    height: 30px;
-    object-fit: cover;
-    margin-bottom: 1rem;
-  }
-  
-  .blog-post h3 {
-    margin-bottom: 0.5rem;
-  }
-  
-  .blog-post a {
-    color: #007bff; /* Blue color for link */
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .blog-post a:hover {
-    color: #0056b3; /* Darker blue on hover */
-  }
-  
-  /* Contact Section */
-  form {
-    display: flex;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem; /* Add padding to nav */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav img{
+  height: 30%;
+  width: 30%;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #007bff; /* Blue color for logo */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding-right: 40px;
+  display: flex;
+}
+
+nav li {
+  align-items: center;
+  margin-left: 2rem;
+}
+
+nav a {
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff; /* Dark gray text color */
+  font-weight: 500; /* Slightly bolder text */
+  transition: color 0.3s ease; /* Add transition effect */
+}
+
+nav a:hover {
+  color: rgb(71, 40, 12); /* Blue color on hover */
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600; /* Bold headings */
+  color: #333;
+}
+
+p {
+  text-align: center;
+  color: #666; /* Darker gray for body text */
+  line-height: 1.6; /* Increase line height for better readability */
+}
+
+button {
+  background: linear-gradient(to right, rgb(158, 102, 158), rgb(159, 131, 80));
+  text-decoration: none;
+  color: white;
+  padding: 1rem 2rem;
+  border: #333;
+  border-radius: 150px;
+  cursor: pointer;
+  font-weight: 500; /* Slightly bolder text */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+button:hover {
+  color: black;
+  background: linear-gradient(to left, rgb(158, 102, 158), rgb(159, 131, 80));
+}
+
+#hero {
+  border-radius: 0px 0px 150px 50px;
+  background: linear-gradient(to right, rgba(8, 1, 37), grey); 
+  background-size: auto;
+  background-repeat: no-repeat;
+  color: rgb(3, 2, 28);
+  text-align: center;
+  padding: 10rem 0;
+}
+
+.image{
+  float: right; /* Float the image to the left */
+  margin: 0 100px 100px 0; /* Add some margin around the image */
+  height: 100%;
+  width: 40%; /* Set the image width */
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  color: white;
+  padding-left: 10%;
+  font-size: 3rem; /* Larger heading size */
+  margin-bottom: 2rem;
+}
+
+.hero-content p {
+  padding-left: 10%;
+  font-size: 1.2rem; /* Slightly larger body text */
+  margin-bottom: 3rem;
+}
+
+/* Features Section */
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature {
+  width: 300px;
+  margin: 1rem;
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.feature img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.feature h3 {
+  font-size: 1.5rem; /* Larger heading size */
+  margin-bottom: 0.5rem;
+}
+
+/* Testimonials Section */
+.testimonial-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.testimonial {
+  width: 300px;
+  margin: 1rem;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.author h4 {
+  margin-bottom: 0;
+}
+
+.author p {
+  font-size: 0.9rem; /* Smaller font size for author details */
+  color: #666; /* Darker gray color */
+}
+
+/* Pricing Section */
+.pricing-plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plan {
+  width: 300px;
+  margin: 1rem;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.plan h3 {
+  font-weight: 600; /* Bold heading */
+  margin-bottom: 1rem;
+}
+
+.plan p {
+  font-size: 1.2rem; /* Larger font size for price */
+  margin-bottom: 1rem;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+/* Blog Section */
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-post {
+  width: 300px;
+  margin: 1rem;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.blog-post img {
+  width: 10%;
+  height: 30px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.blog-post h3 {
+  margin-bottom: 0.5rem;
+}
+
+.blog-post a {
+  color: #007bff; /* Blue color for link */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-post a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Contact Section */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical; /* Allow only vertical resizing */
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, rgba(8, 1, 37), grey); 
+  color: rgb(38, 32, 32);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feature-list, .testimonial-slider, .pricing-plans, .blog-posts {
     flex-direction: column;
-    width: 300px;
-    margin: 0 auto;
   }
-  
-  input, textarea {
-    padding: 1rem;
+
+  .feature, .testimonial, .plan, .blog-post {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav li {
+    margin-left: 0;
     margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
   }
-  
-  textarea {
-    resize: vertical; /* Allow only vertical resizing */
+
+  .hero-content h1 {
+    font-size: 2.5rem; /* Smaller heading size */
   }
-  
-  /* Footer */
-  footer {
-    background: linear-gradient(to right, rgba(8, 1, 37), grey); 
-    color: rgb(38, 32, 32);
-    padding: 2rem 0;
-    text-align: center;
+
+  .hero-content p {
+    font-size: 1rem; /* Smaller body text */
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .feature-list, .testimonial-slider, .pricing-plans, .blog-posts {
-      flex-direction: column;
-    }
-  
-    .feature, .testimonial, .plan, .blog-post {
-      width: 100%;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    nav li {
-      margin-left: 0;
-      margin-bottom: 1rem;
-    }
-  
-    .hero-content h1 {
-      font-size: 2.5rem; /* Smaller heading size */
-    }
-  
-    .hero-content p {
-      font-size: 1rem; /* Smaller body text */
-    }
-  }
-  /* Key Metrics Section */
+}
+/* Key Metrics Section */
 .key-metrics {
-    padding: 100px 0;
+  padding: 100px 0;
+}
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.metric {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.metric img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+.metric h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.metric p {
+  font-size: 1em;
+}
+/* Problem Target Section */
+.problem-target {
+  padding: 100px 0;
+}
+.problem-target p{
+  padding-left: 20%;
+  padding-right: 10%;
+  padding-top: 0%;
+}
+.problem-target img {
+  width: 5%;
+  margin-top: 20px;
+}
+/* Reviews Section */
+.reviews {
+  padding: 100px 0;
+}
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.review {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.review img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.review p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.review h4 {
+  margin-bottom: 5px;
+}
+/* CTA Section */
+.cta {
+  padding: 100px 0;
+}
+button {
+  background: linear-gradient(to right, rgb(158, 102, 158), rgb(159, 131, 80));
+  text-decoration: none;
+  color: white;
+  padding: 1rem 2rem;
+  border: #333;
+  border-radius: 150px;
+  cursor: pointer;
+  font-weight: 500; /* Slightly bolder text */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+button :hover{
+  color: black;
+  background: linear-gradient(to left, rgb(158, 102, 158), rgb(159, 131, 80));
+}
+@keyframes smoothScroll {
+  0% {
+      opacity: 0;
   }
-  .metrics-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+  100% {
+      opacity: 1;
   }
-  .metric {
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  .metric img {
-    width: 80px;
-    margin-bottom: 20px;
-  }
-  .metric h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  .metric p {
-    font-size: 1em;
-  }
-  /* Problem Target Section */
-  .problem-target {
-    padding: 100px 0;
-  }
-  .problem-target p{
-    padding-left: 20%;
-    padding-right: 10%;
-    padding-top: 0%;
-  }
-  .problem-target img {
-    width: 5%;
-    margin-top: 20px;
-  }
-  /* Reviews Section */
-  .reviews {
-    padding: 100px 0;
-  }
-  .review-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-  }
-  .review {
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  .review img {
-    width: 80px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-  .review p {
-    font-style: italic;
-    margin-bottom: 10px;
-  }
-  .review h4 {
-    margin-bottom: 5px;
-  }
-  /* CTA Section */
-  .cta {
-    padding: 100px 0;
-  }
-  button {
-    background: linear-gradient(to right, rgb(158, 102, 158), rgb(159, 131, 80));
-    text-decoration: none;
-    color: white;
-    padding: 1rem 2rem;
-    border: #333;
-    border-radius: 150px;
-    cursor: pointer;
-    font-weight: 500; /* Slightly bolder text */
-    transition: background-color 0.3s ease; /* Add transition effect */
-  }
-  button :hover{
-    color: black;
-    background: linear-gradient(to left, rgb(158, 102, 158), rgb(159, 131, 80));
-  }
-  @keyframes smoothScroll {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 .smooth-scroll {
-    animation: smoothScroll 0.5s ease-in-out;
+  animation: smoothScroll 0.5s ease-in-out;
+}
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: linear-gradient(to right, rgba(8, 1, 37), grey);
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav li {
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+  }
+}
+
+/* Hero Section */
+#hero {
+  padding: 5rem 2rem;
+  text-align: left;
+}
+
+.image {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Flexible Features Section */
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+/* Reviews Section */
+.review-grid {
+  grid-template-columns: 1fr;
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+}
+
+/* Adjust Images for Responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
 }
