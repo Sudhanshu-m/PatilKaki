@@ -12,6 +12,7 @@ header {
   color: #fff;
   padding: 1rem 0;
   text-align: center;
+  width: 100%;
 }
 
 nav {
@@ -98,6 +99,7 @@ button:hover {
 }
 
 #hero {
+  width: 100%;
   border-radius: 0px 0px 150px 50px;
   background: linear-gradient(to right, rgba(8, 1, 37), grey); 
   background-size: auto;
