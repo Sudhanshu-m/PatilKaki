@@ -3,13 +3,15 @@ body {
   font-family: 'Poppins', sans-serif; /* Use 'Poppins' font */
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%;
 }
 
 header {
-  align-items: center;
   background: linear-gradient(to right, rgba(8, 1, 37), grey);
+  color: #fff;
   padding: 1rem 0;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  text-align: center;
 }
 
 nav {
@@ -102,14 +104,14 @@ button:hover {
   background-repeat: no-repeat;
   color: rgb(3, 2, 28);
   text-align: center;
-  padding: 10rem 0;
+  padding: 5rem 2rem;
 }
 
 .image{
   float: right; /* Float the image to the left */
   margin: 0 100px 100px 0; /* Add some margin around the image */
-  height: 100%;
-  width: 40%; /* Set the image width */
+  height: auto;
+  max-width: 100%; /* Set the image width */
 }
 
 .hero-content {
@@ -131,19 +133,19 @@ button:hover {
 
 /* Features Section */
 .feature-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
   justify-content: center;
 }
 
 .feature {
-  width: 300px;
-  margin: 1rem;
+  margin: 0 auto;
   text-align: center;
   padding: 2rem;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .feature img {
@@ -287,9 +289,9 @@ textarea {
 
 /* Footer */
 footer {
-  background: linear-gradient(to right, rgba(8, 1, 37), grey); 
-  color: rgb(38, 32, 32);
-  padding: 2rem 0;
+  background: linear-gradient(to right, rgba(8, 1, 37), grey);
+  color: #fff;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -327,14 +329,15 @@ footer {
 }
 .metrics-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-content: center;
 }
 .metric {
   text-align: center;
-  padding: 20px;
+  padding: 1.5rem;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .metric img {
   width: 80px;
@@ -366,14 +369,15 @@ footer {
 }
 .review-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-content: center;
 }
 .review {
   text-align: center;
-  padding: 20px;
+  padding: 1.5rem;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .review img {
   width: 80px;
@@ -418,6 +422,27 @@ button :hover{
 .smooth-scroll {
   animation: smoothScroll 0.5s ease-in-out;
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .feature-list, .metrics-grid, .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Responsive Navigation */
 @media (max-width: 768px) {
   nav ul {
